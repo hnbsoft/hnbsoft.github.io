@@ -295,12 +295,10 @@
                 <tr>
                     <td>
                         <div id="test2_div" style="border: 1px solid red; margin: 10px;">
-                            <a href="https://com.hnbsoft.hello1.pauframeworkplaceholder.com/index.html?pauopeniap=1">Method1(Open IAP)</a> <br />
-                            <a href="com.hnbsoft.HelloWorld2"><img class="pauopeniap" src="#" alt="Method2-(a open iap)" width="50" height="30">a</a> <br />
-                            <a class="pauopeniap" href="com.hnbsoft.OOM.HelloWorld3.html">Method2-(b open iap)</a> <br />
-                            <a href="com.hnbsoft.OOM.HelloWorld4"><p class="pauopeniap">Method2-(c open iap)</p></a> <br />
-
-                            <a href="https://www.baidu.com"><p class="slideshow_item_icon_box">Bai du</p></a>
+                            <a href="https://soleoffice.com/com.hnbsoft.your.iap.product.id.HelloWorld/index.html?pauopeniap=1">Method1(Open IAP)</a>
+                            <a href="https://soleoffice.com/com.hnbsoft.your.iap.product.id.HelloWorld2"><img class="pauopeniap" src="#" alt="Method2-(a open iap)"></a>
+                            <a href="https://soleoffice.com/com.hnbsoft.OOM.HelloWorld3.html" class="pauopeniap">Method2-(b open iap)</a>
+                            <a href="https://soleoffice.com/com.hnbsoft.OOM.HelloWorld4"><p class="pauopeniap">Method2-(c open iap)</p></a>
                         </div>
                     </td>
                 </tr>
