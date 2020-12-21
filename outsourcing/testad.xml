@@ -295,10 +295,12 @@
                 <tr>
                     <td>
                         <div id="test2_div" style="border: 1px solid red; margin: 10px;">
+
                             <a href="https://soleoffice.com/com.hnbsoft.your.iap.product.id.HelloWorld/index.html?pauopeniap=1">Method1(Open IAP)</a>
-                            <a href="https://soleoffice.com/com.hnbsoft.your.iap.product.id.HelloWorld2"><img class="pauopeniap" src="#" alt="Method2-(a open iap)"></a>
+                            <a href="https://soleoffice.com/com.hnbsoft.your.iap.product.id.HelloWorld2" class="pauopeniap"><img class="pauopeniap" src="#" alt="Method2-(a open iap)"></a>
                             <a href="https://soleoffice.com/com.hnbsoft.OOM.HelloWorld3.html" class="pauopeniap">Method2-(b open iap)</a>
-                            <a href="https://soleoffice.com/com.hnbsoft.OOM.HelloWorld4"><p class="pauopeniap">Method2-(c open iap)</p></a>
+                            <a href="https://soleoffice.com/com.hnbsoft.OOM.HelloWorld4" class="pauopeniap"><p class="pauopeniap">Method2-(c open iap)</p></a>
+
                         </div>
                     </td>
                 </tr>
