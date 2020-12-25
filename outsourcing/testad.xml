@@ -281,7 +281,7 @@
          *                   3. "com.app.id1, com.app.id2, com.app.id3"
          */
         function cocoa_obtain_promo_app_ids() {
-            return "com.hnbsoft.app.Noexistedapp1, com.apple.TextEdit";
+            return "com.hnbsoft.app.Noexistedapp1, com.apple.TextEdit, com.hnb.app3, com.hnb.OOM.app4, com.apple.app5, com.hnbsoft.HelloWorldABCxxx";
         }
 
         /**
