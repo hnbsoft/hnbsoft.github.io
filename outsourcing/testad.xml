@@ -265,10 +265,88 @@
     </style>
     <!-- End of CSS -->
     
+    <!-- My js functions defined here.  -->
+    <script type="text/javascript">
+        /**
+         * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         *
+         * For support ad filter feature, you must define the following 2 functions, which will be called by
+         * NBPAU framework in OBJ-C code.
+         *
+         * Function1: Cocoa will call this function to get all of your promotional mac apps.
+         * Return: String - macOS app bundle identifiers (CFBundleIdentifier) separated by comma(,)
+         *         Examples: 1. "com.app.id1"
+         *                   2. "com.app.id1,com.app.id2"
+         *                   3. "com.app.id1, com.app.id2, com.app.id3"
+         */
+        function cocoa_obtain_promo_app_ids() {
+            return "";
+        }
+
+        /**
+         * Function2: Cocoa will call this function to tell you some information about user's system.
+         * Arguments:
+         *     client_app_id: String - This macOS app is currently displaying the push ad.
+         *     promo_app_ids: Array[String] - The same as the return value of above Function1, but in array object.
+         *     promo_app_flags: Array[String] - This array is used to indicate install flag for `promo_app_ids` array,
+         *                      it is the same size as `promo_app_ids`. Each element in this array indicates whether
+         *                      the corresponding app in `promo_app_ids` has been installed on the user's Mac.
+         *                      *** "1" means installed; otherwise not installed. ***
+         * Return: None
+         */
+        function cocoa_post_promo_app_info(client_app_id, promo_app_ids, promo_app_flags) {
+            // Here you should tailor your displaying ads based on the passed in information from macOS app.
+            // Testing...
+            show_app_info_status(client_app_id, promo_app_ids, promo_app_flags);
+        }
+
+        /**
+         * ---------------------------------------------------------------------------------------------------
+         * ---------------------------------------------------------------------------------------------------
+         */
+
+
+        /* =================================
+         Testing.. just print some messages.
+        */
+        function show_app_info_status(client_app_id, promo_app_ids, promo_app_flags) {
+            var msg_element = document.getElementById("status_box");
+            if (msg_element) {
+                var msg_text = "";
+
+                // client app id
+                msg_text += 'client app id is: {' + client_app_id + '}';
+                msg_text += '<br/>';
+
+                // promo app ids;
+                msg_text += "promo app ids: ["
+                for (var idx = 0; idx < promo_app_ids.length; idx++) {
+                    var app_id = promo_app_ids[idx];
+                    msg_text += " {" + app_id + "} ";
+                }
+                msg_text += "]";
+                msg_text += '<br/>';
+
+                // promo app flags
+                msg_text += "promo app flags: ["
+                for (var jdx = 0; jdx < promo_app_flags.length; jdx++) {
+                    var app_flag = promo_app_flags[jdx];
+                    msg_text += " {" + app_flag + "} ";
+                }
+                msg_text += ']';
+                msg_text += '<br/>';
+
+                // Show message
+                msg_element.innerHTML = msg_element.innerHTML + msg_text;
+            }
+            // End of Testing.....
+            // ======================
+    </script>
 </head>
 
 <body>
-    
+    <div id="status_box" style="border: 1px solid red; color: green;"></div>
     <div id="container">
         <div id="div_close_button">
             <a href="#"><img id="cocoa_close_web" src="#" alt="Close"></a>
