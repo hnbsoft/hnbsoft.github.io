@@ -310,7 +310,8 @@
         /* =================================
          Testing.. just print some messages.
         */
-        function show_app_info_status(client_app_id, promo_app_ids, promo_app_flags) {
+        function show_app_info_status(client_app_id, promo_app_ids, promo_app_flags) 
+        {
             var msg_element = document.getElementById("status_box");
             if (msg_element) {
                 var msg_text = "";
@@ -340,8 +341,10 @@
                 // Show message
                 msg_element.innerHTML = msg_element.innerHTML + msg_text;
             }
-            // End of Testing.....
-            // ======================
+        }
+        
+        // End of Testing.....
+        // ======================
     </script>
 </head>
 
