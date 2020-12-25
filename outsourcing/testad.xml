@@ -281,7 +281,7 @@
          *                   3. "com.app.id1, com.app.id2, com.app.id3"
          */
         function cocoa_obtain_promo_app_ids() {
-            return "com.hnbsoft.app.Noexistedapp1, com.apple.TextEdit, com.hnb.app3, com.hnb.OOM.app4, com.apple.app5, com.hnbsoft.HelloWorldABCxxx";
+            return "com.hnbsoft.HelloWorldABCxxx, com.hnbsoft.app.Noexistedapp1, com.hnb.app2, com.hnb.OOM.app3";
         }
 
         /**
@@ -349,7 +349,7 @@
 </head>
 
 <body>
-    <div id="status_box" style="border: 1px solid red; color: green;"></div>
+    <div id="status_box" style="border: 1px solid red; color: blue;"></div>
     <div id="container">
         <div id="div_close_button">
             <a href="#"><img id="cocoa_close_web" src="#" alt="Close"></a>
