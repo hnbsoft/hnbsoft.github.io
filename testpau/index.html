@@ -63,7 +63,13 @@
         .slideshow_item_table
         {
             margin: 0 auto;
-            height: 100%;
+            border-collapse: collapse;
+            /* border: 1px solid yellow; */
+        }
+
+        .slideshow_item_tr
+        {
+            border-bottom: medium solid #32a1ce;
         }
 
         .slideshow_item_table a
@@ -99,7 +105,7 @@
         .slideshow_item_texts_td
         {
             height: 100%;
-            padding: 10px 0 10px 0;
+            padding: 10px 0 16px 0;
             /* border: 1px solid red; */
         }
 
@@ -188,7 +194,7 @@
 
     <div id="main_contents_box">
         <table class="slideshow_item_table" border="0" cellspacing="0">
-            <tr>
+            <tr class="slideshow_item_tr">
                 <td class="slideshow_item_icon_td">
                     <div class="slideshow_item_icon_box">
                         <a href="https://apps.apple.com/app/id645727036?ls=1&mt=12"><img id="image_logo" src="#" alt="GO Office"></a>
