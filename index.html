@@ -1,107 +1,246 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>HNBSoft Team</title>
-	
-	<!-- CSS -->
-	<style type="text/css">
-		html, body 
-		{
-			padding: 0px;
-			margin: 0px;
-			background-color: gray;
-		}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="hnbsoft team">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags-->
+    <!-- Title-->
+    <title>hnbsoft team</title>
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico">
+    <!-- Core Stylesheet-->
+    <link rel="stylesheet" href="res/css/style.css">
+    <link rel="stylesheet" href="res/css/wuycss.css">
 
-		#main_div
-		{
-			width: 600px;
-			height: 400px;
-			margin-top: 100px;
-			margin-bottom: 40px;
-			margin-left: auto;
-			margin-right: auto;
-			background-color: #000;
-			color: #fff;
-			text-align: center;
+    <!-- my javascript(apps) -->
+    <script src="res/apps/apps.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- Preloader-->
+    <div class="preloader" id="preloader">
+      <div class="spinner-grow text-light" role="status"><span class="sr-only">Loading...</span></div>
+    </div>
 
-			filter:Alpha(opacity=60);
-    	    -moz-opacity:0.6;
-      		-khtml-opacity: 0.6;
-      		opacity:0.6;
-      		border-radius: 8px;
-		}
+    <!-- Welcome Area-->
+    <section class="welcome-area" id="home">
+      <!-- The top logo in center -->
+      <div class="wuy-top-logo-container">
+        <a class="nav-brand" href="index.html"><img src="res/img/logo.svg" alt="Logo"></a>
+      </div>
+      <!-- Background Shape-->
+      <div class="background-shape">
+        <div class="circle1 wow fadeInRightBig" data-wow-duration="4000ms"></div>
+        <div class="circle2 wow fadeInRightBig" data-wow-duration="4000ms"></div>
+        <div class="circle3 wow fadeInRightBig" data-wow-duration="4000ms"></div>
+        <div class="circle4 wow fadeInRightBig" data-wow-duration="4000ms"></div>
+      </div>
+      <!-- Background Animation-->
+      <div class="background-animation">
+        <div class="star-ani"></div>
+        <div class="cloud-ani"></div>
+        <div class="triangle-ani"></div>
+        <div class="circle-ani"></div>
+        <div class="box-ani"></div>
+        <div class="line-ani"></div>
+      </div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-between">
+          <!-- Welcome Content-->
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="welcome-content">
+              <h2 class="wow fadeInUp" data-wow-duration="1000ms">Make Creative Products</h2>
+              <p class="mb-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+                  We're software madmen in the best possible meaning of the terms: obsessive, whimsical, and passionate.
+              </p>
+              <a class="btn radix-btn white-btn mt-3 wow fadeInUp" href="mailto:hnbsoft@outlook.com" target="_blank" data-wow-duration="1000ms" data-wow-delay="400ms">Contact Us</a>
+            </div>
+          </div>
+          <!-- Welcome Thumb-->
+          <div class="col-10 col-md-6">
+            <div class="welcome-thumb hero1 wow fadeInUp" data-wow-delay="300ms"><img src="res/img/hero.svg" alt="Hero image"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		#main_div a
-		{
-			color: #fff;
-			text-decoration:none;
-			
-			filter:Alpha(opacity=99);
-    	    -moz-opacity:0.99;
-      		-khtml-opacity: 0.99;
-      		opacity:0.99;
-		}
-		
-		#main_div a:hover
-		{
-			color: #fff;
-			text-decoration:underline;
-		}
+    <!-- About Area-->
+    <div class="container">
+      <div class="border-top"></div>
+    </div>
+    <!-- Cool Facts Area-->
 
-		#main_table
-		{
+    <!-- Service Area-->
+    <section class="service-area section-padding-120-70" id="service">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9 col-lg-7">
+            <div class="section-heading text-center"><i class="lni-flower"></i>
+                <h2><span>Amazing Apps</span> to Improve Your Mac</h2>
+              <p>Crafted with tender love and care.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
 
-			width: 100%;
-			height: 100%;
-		}
+          <!-- Generate Apps html codes.  -->
+          <script type="text/javascript">
+            var htmlCode = generateAllAppsHtmlString();
+            document.write(htmlCode);
+          </script>
+          <!-- End of generating apps. -->
 
-		#main_table h1 {
-			margin: 0px;
-			padding: 0px;
-		}
-		
-		#main_table p {
-			margin-top: 5px;
-			margin-bottom: 5px;
-			font-size:larger;
-		}
+        </div>
+      </div>
+    </section>
 
-		#main_table span {
-			margin-right: 5px;
-		}
-		
-		
-	</style>
+    <!-- Features Area-->
 
-</head>
+    <!-- Radix Features Area-->
 
-<body>
-	<div id="main_div">
-		<table id="main_table" border="0">
-			<tr>
-				<td>
-					<!--
-					<h1>COMING SOON...</h1>
-					<p>We are currently developing an all-new design.</p>
-					-->
-					<h1>HNBSoft Team</h1>
-					<p>
-						<br/>
-						<br/>
-						<span>Contact Us:</span><a href="mailto:hnbsoft@outlook.com">hnbsoft@outlook.com</a>
-					</p>
+    <!-- Pricing Plan Area-->
 
-					
+    <!-- Portfolio Area-->
 
-				</td>
-			</tr>
-		</table>
-		
-		
-	</div>
+    <!-- Team Area-->
 
-</body>
-	
-	
+    <!-- Client Feedback Area-->
+
+    <!-- Partner Area-->
+
+    <!-- News Area-->
+
+    <!-- Cool Facts Area-->
+
+    <!-- Cookie Alert Area-->
+
+    <!-- Footer Area-->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 align-self-start">
+            <h6 class="text-primary pl-xl-5">About Us</h6>
+            <p class="mt-2 pl-xl-5 text-muted">We're striving to innovate and make incredible software for your Mac.</p>
+          </div>
+
+          <div class="col-lg-2 align-self-lg-start align-self-xl-center">
+            <h6 class="text-dark">Contact Us</h6>
+            <p class="mt-2 wuy-links">
+              <a class="text-secondary" href="mailto:hnbsoft@outlook.com">hnbsoft@outlook.com</a>
+            </p>
+          </div>
+
+          <div class="col-lg-2 align-self-lg-start align-self-xl-center">
+            <h6 class="text-dark wuy-policy">Policy</h6>
+            <p class="mt-2 wuy-policy wuy-links">
+              <a class="text-secondary" href="privacy.html" target="_blank">Privacy Policy</a>
+            </p>
+          </div>
+
+          <!-- Acknowledges -->
+          <div class="col-lg-4 align-self-lg-start align-self-xl-center">
+
+            <h6 class="text-dark pl-xl-5 wuy-thanks">Acknowledgements</h6>
+            <!-- <p class="mt-2 pl-xl-5 text-secondary"></p> -->
+            <p class="mt-2 pl-xl-5 text-secondary wuy-thanks wuy-links">
+                <a class="text-secondary" href="javascript:void(0)" data-toggle="modal" data-target="#modalThanks">Images by Freepik</a>
+            </p>
+
+          </div>
+        </div>
+
+
+        <!-- others -->
+        <div class="text-center text-muted mt-30 mb-30">
+          <small>
+            Apple, Mac, and macOS are registered trademarks or trademarks of Apple Inc. in the U.S. and/or other countries. Microsoft, Windows, Win10 and Win11 are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries. hnbsoft team has no affiliation with Apple Inc. and/or Microsoft Corporation.
+          </small>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- All JavaScript Files -->
+    <script src="res/js/jquery.min.js"></script>
+    <script src="res/js/popper.min.js"></script>
+    <script src="res/js/bootstrap.min.js"></script>
+    <script src="res/js/default/classy-nav.min.js"></script>
+    <script src="res/js/waypoints.min.js"></script>
+    <script src="res/js/jquery.easing.min.js"></script>
+    <script src="res/js/default/jquery.scrollup.min.js"></script>
+    <script src="res/js/owl.carousel.min.js"></script>
+    <script src="res/js/imagesloaded.pkgd.min.js"></script>
+    <script src="res/js/default/isotope.pkgd.min.js"></script>
+    <script src="res/js/jquery.magnific-popup.min.js"></script>
+    <script src="res/js/jquery.animatedheadline.min.js"></script>
+    <script src="res/js/jquery.counterup.min.js"></script>
+    <script src="res/js/wow.min.js"></script>
+    <script src="res/js/jarallax.min.js"></script>
+    <script src="res/js/jarallax-video.min.js"></script>
+    <script src="res/js/default/cookiealert.js"></script>
+    <script src="res/js/default/jquery.passwordstrength.js"></script>
+    <script src="res/js/default/mail.js"></script>
+    <script src="res/js/default/active.js"></script>
+
+
+    <!-- Acknowledgements Modal -->
+    <div class="modal fade" id="modalThanks" style="background-color: rgba(0, 0, 0, 0.5);" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" style="margin: 20px auto;" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Acknowledgements</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <p>Portions of this website may utilize the following materials, the use of which is hereby acknowledged:</p>
+
+                    <div class="wuy-thanks-table-wrapper">
+                        <table class="wuy-thanks-table">
+                            <!-- Logo icon image -->
+                            <tr>
+                                <td>
+                                    <div class="wuy-thanks-img-box">
+                                        <img src="res/img/iconwide.png" alt="Logo">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        This logo image is designed by <a href="https://www.freepik.com/free-vector/flat-letter-h-logo-template-set_25530187.htm#page=3&query=h%20letter&position=33&from_view=search" target="_blank">Freepik</a>
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- Hero image  -->
+                            <tr>
+                                <td>
+                                    <div class="wuy-thanks-img-box">
+                                        <img src="res/img/hero.svg" alt="Hero illustration">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        This illustration is designed <a href="https://www.freepik.com/free-vector/software-developers-programming-computer-with-script_9649487.htm#page=2&query=software%20development%20work&position=14&from_view=search" target="_blank">by pch.vector</a> on <a href="https://www.freepik.com" target="_blank">Freepik</a>
+                                    </p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End of Acknowledgements Modal -->
+    
+    <!-- Release v1.0 on 2022.09.17 (Initial version) -->
+  </body>
 </html>
