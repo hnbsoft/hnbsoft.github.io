@@ -135,12 +135,23 @@ function getAllAppInfoList()
     paintExpertApp.desc      = "NOT USED";                    // **NOT USED**: App detailed description
     paintExpertApp.lines     = 0;                             // 0, 1, 2. Extra lines.
 
+    // App 5. App Icon Producer (Mac)
+    var iconApp       = new AppInfo();
+    iconApp.name      = "App Icon Producer";                // App name
+    iconApp.appid     = "6451134736";                       // Your app or product id
+    iconApp.icon      = "iconapp";                          // App icon name(without extension)
+    iconApp.repoName  = "AppIconGenerator";                 // The repo name for source code and license url address.
+    iconApp.intro     = "Make .icns icon file easily";      // App introduction
+    iconApp.desc      = "NOT USED";                         // **NOT USED**: App detailed description
+    iconApp.lines     = 0;                                  // 0, 1, 2. Extra lines.
+
 
     // Add to list
     allAppsList.push(glanceApp);        // glance app
     allAppsList.push(goOfficeApp);      // go office app
     allAppsList.push(rarApp);           // rar extractor expert app
     allAppsList.push(paintExpertApp);   // paint expert app
+    allAppsList.push(iconApp)           // App Icon app
 
     // return this list
     return allAppsList;
