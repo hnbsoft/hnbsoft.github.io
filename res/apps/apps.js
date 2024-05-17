@@ -42,6 +42,10 @@ function AppInfo()
         return this.icon + ".png";
     };
 
+    this.getRepoName = function() {
+        return this.repoName;
+    };
+
     this.getCodeUrl = function() {
         return "https://github.com/hnbsoft/" + this.repoName;
     };
@@ -145,13 +149,24 @@ function getAllAppInfoList()
     iconApp.desc      = "NOT USED";                         // **NOT USED**: App detailed description
     iconApp.lines     = 0;                                  // 0, 1, 2. Extra lines.
 
+    // App 6: Packs for MS Office Templates (Mac)
+    var pack4MSOApp = new AppInfo();
+    pack4MSOApp.name      = "Packs for MS Office Templates";            // App name
+    pack4MSOApp.appid     = "6502692083";                               // Your app or product id
+    pack4MSOApp.icon      = "pack4mso";                                 // App icon name(without extension)
+    pack4MSOApp.repoName  = "";                                         // The repo name for source code and license url address.
+    pack4MSOApp.intro     = "A great number of different templates";    // App introduction
+    pack4MSOApp.desc      = "NOT USED";   // **NOT USED**: App detailed description
+    pack4MSOApp.lines     = 0;            // 0, 1, 2. Extra lines.
+
 
     // Add to list
     allAppsList.push(glanceApp);        // glance app
     allAppsList.push(goOfficeApp);      // go office app
     allAppsList.push(rarApp);           // rar extractor expert app
     allAppsList.push(paintExpertApp);   // paint expert app
-    allAppsList.push(iconApp)           // App Icon app
+    allAppsList.push(iconApp);          // App Icon app
+    allAppsList.push(pack4MSOApp);      // Packs for MS Office Templates app
 
     // return this list
     return allAppsList;
@@ -173,6 +188,7 @@ function generateAllAppsHtmlString()
         var appInfo = allAppsList[aIndex];
         var appName = appInfo.getAppName();
         var appIcon = appInfo.getAppIconName();
+        var appRepoName = appInfo.getRepoName();
         var appUrl = appInfo.getStoreUrl();
         var appIntro = appInfo.getIntro();
         var appLines = appInfo.getExtraLines();
@@ -198,7 +214,7 @@ function generateAllAppsHtmlString()
         htmlString += '            <div style="margin: 30px auto;"></div>';
         htmlString += '            <a href="' + appUrl + '" target="_blank"><button style="width: 75%;" type="button" class="btn btn-primary">View on the ' + appStoreName + '</button></a>';
         htmlString += '            <div style="margin: 10px auto;"></div>';
-        htmlString += '            <a href="' + appSourceCodeUrl + '" target="_blank"><button style="width: 75%;" type="button" class="btn btn-success">Source Code &amp; License</button></a>';
+        htmlString += appRepoName ? '            <a href="' + appSourceCodeUrl + '" target="_blank"><button style="width: 75%;" type="button" class="btn btn-success">Source Code &amp; License</button></a>' : '';
         htmlString += extraLineHtmlString;
         htmlString += '        </div>';
         htmlString += '    </div>';
